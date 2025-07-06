@@ -43,7 +43,7 @@ const ctaCards = [
     buttonText: "View Schedule",
     buttonStyle: "btn-secondary",
     href: "/services",
-    stats: { icon: Clock, value: "100+", label: "Classes weekly" },
+    stats: { icon: Clock, value: "100+", label: "Members" },
   },
 ]
 
