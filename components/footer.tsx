@@ -127,7 +127,7 @@ export default function Footer() {
                       <div>
                         <p className="font-medium text-white">Address</p>
                         <a
-                          href="https://www.google.com/maps?q=Arthanari+Bakkiam+Complex,+39/7,+Vasagasalai+St,+near+ponganapathi+temple,+Ponnammapet,+Salem,+Tamil+Nadu+636001"
+                          href="https://www.google.com/maps/place/Aura+Fitness+Studio/@11.6668878,78.170566,994m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3babf15db672f29d:0xcd6aef5dc0538236!8m2!3d11.6668826!4d78.1731463!16s%2Fg%2F11y98tmsrb?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:text-accent-orange transition-colors duration-300"
