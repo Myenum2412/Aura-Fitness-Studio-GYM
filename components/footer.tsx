@@ -130,7 +130,7 @@ export default function Footer() {
                           href="https://www.google.com/maps?q=Arthanari+Bakkiam+Complex,+39/7,+Vasagasalai+St,+near+ponganapathi+temple,+Ponnammapet,+Salem,+Tamil+Nadu+636001"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:text-accent-orange transition-colors duration-300 underline"
+                          className="hover:text-accent-orange transition-colors duration-300"
                         >
                           Arthanari Bakkiam Complex, 39/7, Vasagasalai St, near ponganapathi temple, Ponnammapet, Salem, Tamil Nadu 636001
                         </a>
@@ -143,7 +143,7 @@ export default function Footer() {
                         <p className="font-medium text-white">Phone</p>
                         <a
                           href="tel:+919943799969"
-                          className="hover:text-accent-orange transition-colors duration-300 underline"
+                          className="hover:text-accent-orange transition-colors duration-300"
                         >
                           +91 99437 99969
                         </a>
@@ -156,7 +156,7 @@ export default function Footer() {
                         <p className="font-medium text-white">Email</p>
                         <a
                           href="mailto:aurafitness@email.com"
-                          className="hover:text-accent-orange transition-colors duration-300 underline"
+                          className="hover:text-accent-orange transition-colors duration-300"
                         >
                           aurafitness@email.com
                         </a>
