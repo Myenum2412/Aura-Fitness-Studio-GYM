@@ -180,7 +180,7 @@ export default function Footer() {
         <ScrollAnimation delay={800}>
           <div className="mt-16 border-t border-gray-800 pt-8 sm:mt-20 lg:mt-24">
             <div className="flex flex-col sm:flex-row justify-between items-center">
-              <p className="text-xs leading-5 text-gray-400">&copy; 2024 Aura Fitness Studio. All rights reserved.</p>
+              <p className="text-xs leading-5 text-gray-400">&copy; 2025 Aura Fitness Studio. All rights reserved.</p>
               <div className="flex space-x-6 mt-4 sm:mt-0">
                 <Link href="#" className="text-xs text-gray-400 hover:text-white transition-colors duration-300">
                   Privacy Policy
