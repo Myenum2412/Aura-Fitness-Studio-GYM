@@ -19,7 +19,7 @@ const ctaCards = [
     buttonText: "Claim Your Trial",
     buttonStyle: "btn-primary",
     href: "/booking",
-    stats: { icon: Users, value: "5000+", label: "Members joined" },
+    stats: { icon: Users, value: "500+", label: "Members joined" },
   },
   {
     title: "Personal Training",
