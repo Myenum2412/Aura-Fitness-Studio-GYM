@@ -167,7 +167,8 @@ export default function Footer() {
                       <Clock className="h-4 w-4 mt-0.5 text-accent-orange group-hover:text-orange-500 transition-colors duration-300" />
                       <div>
                         <p className="font-medium text-white">Hours</p>
-                        <p>Mon-Sun 5:30 am – 9:30 pm</p>
+                        <p>Mon - Sat 5:30 am – 9:30 pm</p>
+                        <p>Sun 7 : 00 am - 11 : 00 pm  </p>
                       </div>
                     </div>
                   </div>
