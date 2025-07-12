@@ -1,3 +1,5 @@
+// app/layout.tsx or app/layout.js
+
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -6,6 +8,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
 import ErrorBoundary from "@/components/error-boundary"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://aurafitnessstudio.com",
+    url: "https://www.aurafitnessstudio.in",
     siteName: "Aura Fitness Studio",
     title: "Aura Fitness Studio - Premium Gym & Wellness Center",
     description:
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -71,6 +74,20 @@ export default function RootLayout({
           <Footer />
           <Toaster />
         </ErrorBoundary>
+
+        {/* Google Analytics Script */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-F5X352EZHL"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F5X352EZHL');
+          `}
+        </Script>
       </body>
     </html>
   )
