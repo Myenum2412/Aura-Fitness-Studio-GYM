@@ -1,5 +1,3 @@
-// app/layout.tsx or app/layout.js
-
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -67,18 +65,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-primary-black text-white`}>
-        <ErrorBoundary>
-          <Header />
-          {children}
-          <Footer />
-          <Toaster />
-        </ErrorBoundary>
-
-        {/* Google Analytics Script */}
+      <head>
+        {/* Google Analytics - gtag.js */}
         <Script
-          strategy="afterInteractive"
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-F5X352EZHL"
+          strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
@@ -88,6 +80,14 @@ export default function RootLayout({
             gtag('config', 'G-F5X352EZHL');
           `}
         </Script>
+      </head>
+      <body className={`${inter.className} bg-primary-black text-white`}>
+        <ErrorBoundary>
+          <Header />
+          {children}
+          <Footer />
+          <Toaster />
+        </ErrorBoundary>
       </body>
     </html>
   )
